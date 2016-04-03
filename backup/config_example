@@ -1,0 +1,6 @@
+passphrase: my_passphrase
+target: target_backup_location
+source: backup_source_folder
+backup: /directory/to/backup/service
+include: include_file_name.glob
+exclude: exclude_file_name.glob

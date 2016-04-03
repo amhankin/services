@@ -1,0 +1,6 @@
+backup/config
+backup/logs/*
+backup/cache
+launchd/logs/*
+*.swp
+*.DS_Store
