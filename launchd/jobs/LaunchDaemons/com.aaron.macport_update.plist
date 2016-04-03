@@ -3,7 +3,7 @@
 <plist version="1.0">
 	<dict>
 		<key>Label</key>
-		<string>com.aaron.backup</string>
+		<string>com.aaron.macports_update</string>
 		<key>EnvironmentVariables</key>
 		<dict>
 				<key>PATH</key>
