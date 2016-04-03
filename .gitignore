@@ -1,6 +1,11 @@
-backup/config
-backup/logs/*
-backup/cache
-launchd/logs/*
+# Temporary files
 *.swp
 *.DS_Store
+
+# Log directories
+backup/logs/*
+macports/logs/*
+
+# Folders
+backup/config
+backup/cache

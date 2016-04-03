@@ -11,7 +11,7 @@
 		</dict>
 		<key>ProgramArguments</key>
 		<array>
-			<string>/srv/backup/runbackup.sh</string>
+			<string>/srv/macports/run_update.sh</string>
 		</array>
 		<key>StartCalendarInterval</key>
 		<dict>
@@ -19,6 +19,8 @@
 			<integer>3</integer>
 			<key>Minute</key>
 			<integer>30</integer>
+			<key>Weekday</key>
+			<integer>0</integer>
 		</dict>
 	</dict>
 </plist>
