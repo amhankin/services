@@ -4,14 +4,15 @@
 ulimit -n 1024 	# required for macs for some reason
 
 # Retrieve configuration settings from config file
-BACKUP=`awk '$1 == "backup:" {print $2}' config`
-PASSPHRASE=`awk '$1 == "passphrase:" {print $2}' config`
-TARGET=`awk '$1 == "target:" {print $2}' config`
-EXCLUDE=`awk '$1 == "exclude:" {print $2}' config`
-INCLUDE=`awk '$1 == "include:" {print $2}' config`
-SOURCE=`awk '$1 == "source:" {print $2}' config`
-OLDAGE="30D"
-FULLAGE="20D"
+CONFIG="/srv/backup/config"
+BACKUP=`awk '$1 == "backup:" {print $2}' $CONFIG`
+PASSPHRASE=`awk '$1 == "passphrase:" {print $2}' $CONFIG`
+TARGET=`awk '$1 == "target:" {print $2}' $CONFIG`
+EXCLUDE=`awk '$1 == "exclude:" {print $2}' $CONFIG`
+INCLUDE=`awk '$1 == "include:" {print $2}' $CONFIG`
+SOURCE=`awk '$1 == "source:" {print $2}' $CONFIG`
+OLDAGE="40D"
+FULLAGE="30D"
 
 date
 
