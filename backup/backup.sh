@@ -15,6 +15,8 @@ OLDAGE="40D"
 FULLAGE="30D"
 
 date
+cd /backup/ronjoe
+cd ~/
 
 # Perform backup
 export PASSPHRASE
