@@ -1,0 +1,11 @@
+#!/bin/bash
+FROM='amh4@ions:/srv/backup/'
+TO='/srv/backup'
+rsync\
+    $1\
+    -axE\
+    --progress\
+    --stats\
+	--exclude-from=exludes_srvbackup\
+	$FROM\
+	$TO

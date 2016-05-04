@@ -1,0 +1,13 @@
+.DS_Store
+*lockfile.lck
+*.swp
+*__pycache__
+.TemporaryItems
+.git
+.ropeproject
+.ipynb_checkpoints
+~*
+._~*
+*.m~
+.*Spotlight
+Thumbs.db
