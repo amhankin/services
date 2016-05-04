@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#set -x 		# uncomment to see verbose output
+set -x 		# uncomment to see verbose output
 ulimit -n 1024 	# required for macs for some reason
 
 # Retrieve configuration settings from config file
@@ -15,8 +15,6 @@ OLDAGE="40D"
 FULLAGE="30D"
 
 date
-cd /backups/ronjoe
-cd ~/
 
 # Perform backup
 export PASSPHRASE
