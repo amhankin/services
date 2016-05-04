@@ -15,12 +15,13 @@ OLDAGE="40D"
 FULLAGE="30D"
 
 date
-cd /backup/ronjoe
+cd /backups/ronjoe
 cd ~/
 
 # Perform backup
 export PASSPHRASE
 duplicity incremental \
+	--allow-source-mismatch \
 	--full-if-older-than $FULLAGE \
 	--verbosity 4 --exclude-device-files \
 	--archive-dir "${BACKUP}/cache" \
