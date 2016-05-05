@@ -5,6 +5,7 @@
 # Log directories
 backup/logs/*
 macports/logs/*
+sync/logs/*
 
 # Folders
 backup/config

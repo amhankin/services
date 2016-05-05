@@ -9,10 +9,13 @@ LOGFILE=$3
 #  	--dry-run: change no files
 
 rsync \
-	--exclude-from=/srv/sync/rsync_excludes \
+	--itemize-changes \
+	--exclude-from="/srv/sync/rsync_excludes" \
 	--archive \
+	--no-o \
+	--no-g \
 	--links \
 	--human-readable \
-	--log-file=$LOGFILE \
+	--log-file=${LOGFILE} \
 	${SOURCE} \
 	${TARGET}
