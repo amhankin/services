@@ -12,6 +12,7 @@ rsync \
 	--itemize-changes \
 	--exclude-from="/srv/sync/rsync_excludes" \
 	--archive \
+	--update \
 	--no-o \
 	--no-g \
 	--links \
