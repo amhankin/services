@@ -4,8 +4,8 @@ DATESTAMP=`date "+%Y%m%d_%H%M%S"`
 exec > >(tee -i /srv/sync/logs/test1_${DATESTAMP}.log)
 exec 2>&1
 NAME='PresentationsUSB'
-TARGET="/Volumes/KINGSTON/Presenstations/"
-SOURCE="/Users/amh4/Research/PapersPresentations/"
+SOURCE="/Users/amh4/Research/Data_AlCa"
+TARGET="/Volumes/KINGSTON/Data_AlCa"
 LOGFILE_LOCAL="/srv/sync/logs/rsynclog_local_${NAME}_${DATESTAMP}"
 LOGFILE_REMOTE="/srv/sync/logs/rsynclog_remote_${NAME}_${DATESTAMP}"
 

@@ -1,11 +1,21 @@
 #!/bin/bash
-set -x
+#set -x
 DATESTAMP=`date "+%Y%m%d_%H%M%S"`
 exec > >(tee -i /srv/sync/logs/test1_${DATESTAMP}.log)
 exec 2>&1
 NAME='Data_AlCa'
-TARGET="/Volumes/WD01_STORAGE/Data_AlCa/"
-SOURCE="/nist/Data_AlCa/"
+
+# 68810ahmac to jake
+SOURCE="/Users/amh4/Research/Data_AlCa"
+TARGET="/nist/Data_AlCa"
+
+# 68810ahmac to usb drive
+#SOURCE="/Users/amh4/Research/Data_AlCa"
+#TARGET="/Volumes/WD01_STORAGE/Data_AlCa"
+
+# ronjoe to jake
+#SOURCE="/Users/amh4/Research/Data_AlCa"
+#TARGET="/Volumes/Data_AlCa"
 LOGFILE_LOCAL="/srv/sync/logs/rsynclog_local_${NAME}_${DATESTAMP}"
 LOGFILE_REMOTE="/srv/sync/logs/rsynclog_remote_${NAME}_${DATESTAMP}"
 

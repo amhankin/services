@@ -13,10 +13,11 @@ rsync \
 	--exclude-from="/srv/sync/rsync_excludes" \
 	--archive \
 	--update \
+	--no-perms \
 	--no-o \
 	--no-g \
 	--links \
 	--human-readable \
 	--log-file=${LOGFILE} \
-	${SOURCE} \
+	${SOURCE}/ \
 	${TARGET}
